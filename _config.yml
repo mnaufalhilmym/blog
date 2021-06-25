@@ -2,7 +2,7 @@ title: Hilmy's Blog # The title of the blog
 author: Muhammad Naufal Hilmy Makarim # Your name 
 email: naufal[at]hilmy[dot]dev # your email shown in the footer
 email_link: naufal@hilmy.dev
-url: blog.hilmy.dev # this is your site's root address.
+url: http://hilmy.dev/blog # this is your site's root address.
 header: Hi!
 description: > # this means to ignore newlines until "show_excerpts:"
   I am Hilmy, and this is my blog 😬
