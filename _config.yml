@@ -7,6 +7,7 @@ header: Hi!
 description: > # this means to ignore newlines until "show_excerpts:"
   I am Hilmy, and this is my blog 😬
 favicon: "./favicon.ico" # set the favicon of the site 
+post_img: https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts
 
 show_excerpts: false # set to true to show excerpts on the homepage
   

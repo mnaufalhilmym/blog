@@ -9,11 +9,11 @@ This method should work on all Linux distributions, such as Debian, Ubuntu, Arch
 
 1.  Make sure your Linux desktop has PRIME Profile NVIDIA On-Demand.
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/1.png)
+    ![]({{ site.post_img }}/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/1.png)
 
     You can also check it by running the command as shown below.
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/2.png)
+    ![]({{ site.post_img }}/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/2.png)
 
 2.  In short, you can run certain applications using a dedicated NVIDIA GPU by running the following command.
     ```
@@ -30,7 +30,7 @@ This method should work on all Linux distributions, such as Debian, Ubuntu, Arch
     __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep vendor
     ```
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/3.png)
+    ![]({{ site.post_img }}/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/3.png)
 
     If NVIDIA GPU is displayed, then the configuration is correct and the application can be run using dedicated NVIDIA GPU. 
 

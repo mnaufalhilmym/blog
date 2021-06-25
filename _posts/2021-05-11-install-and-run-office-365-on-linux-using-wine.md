@@ -6,7 +6,7 @@ author: "Muhammad Naufal Hilmy Makarim"
 ---
 
 
-![My Linux desktop (Zorin OS) running Office 365 through WINE]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/1.png)
+![My Linux desktop (Zorin OS) running Office 365 through WINE]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/1.png)
 
 _Before continuing, it is best if you read it at least once._
 
@@ -32,7 +32,7 @@ _Before continuing, it is best if you read it at least once._
     WINEPREFIX=~/.wine/office365 WINEARCH=win32 winecfg
     ```
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/2.png)
+    ![]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/2.png)
 
 5.  On the "Wine configuration" dialog, select Windows 7 as "Windows Version". Do not use other Windows version!
 
@@ -59,23 +59,23 @@ _Before continuing, it is best if you read it at least once._
     -   Open "Developer tools" or "Inspect element".
     -   Open "Network conditions".
 
-        ![]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/3.png)
+        ![]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/3.png)
 
     -   Uncheck "Select automatically" then select "Chrome - Windows". Then reload the webpage.
 
-        ![]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/4.png)
+        ![]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/4.png)
 
 9. You will see "Install Office". Click it then click "Other installation".
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/5.png)
+    ![]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/5.png)
 
 10. Click "View applications & devices"
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/6.png)
+    ![]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/6.png)
 
 11. Select 32-bit version then click "Install Office". The download process will start immediately.
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/7.png)
+    ![]({{ site.post_img }}/2021-05-11-install-and-run-office-365-on-linux-using-wine/7.png)
 
 12. To install Office 365, run the following command on terminal:
 

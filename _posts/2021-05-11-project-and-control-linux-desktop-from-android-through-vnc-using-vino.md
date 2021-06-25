@@ -6,13 +6,13 @@ author: "Muhammad Naufal Hilmy Makarim"
 ---
 
 
-![My Linux (Zorin OS) projected and controlled by my Android]({{ site.url }}/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png)
+![My Linux (Zorin OS) projected and controlled by my Android]({{ site.post_img }}/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png)
 
 Linux distributions that come with GNOME desktop environment (Debian, Ubuntu, etc.) will have Vino as default VNC (Virtual Network Computing) server. So we will use it _Before continuing, it is best if you read it at least once._
 
 1.  Open GNOME Settings.
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png)
+    ![]({{ site.post_img }}/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png)
 
 2.  Click "Sharing".
 
@@ -20,11 +20,11 @@ Linux distributions that come with GNOME desktop environment (Debian, Ubuntu, et
 
 4.  Click "Screen Sharing".
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png)
+    ![]({{ site.post_img }}/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png)
 
 5.  Adjust "Screen Sharing" settings according to your preference.
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png)
+    ![]({{ site.post_img }}/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png)
 
 6.  To avoid problems caused by the incompatibility of the encryption used by Vino, we need to disable the encryption with the following command:
 
@@ -46,13 +46,13 @@ Linux distributions that come with GNOME desktop environment (Debian, Ubuntu, et
     ```
     hostname -I
     ```
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png)
+    ![]({{ site.post_img }}/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png)
 
     Use the first IP address (192.168.1. *). If asked, use port 5900.
 
 8.  Run the VNC viewer application that has been installed, adjust it to the VNC server configuration.
 
-    ![]({{ site.url }}/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png)
+    ![]({{ site.post_img }}/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png)
 
 9.  Click "Connect".
 
