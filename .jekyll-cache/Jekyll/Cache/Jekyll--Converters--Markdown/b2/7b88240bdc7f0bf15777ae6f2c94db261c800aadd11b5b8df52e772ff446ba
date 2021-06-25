@@ -1,0 +1,65 @@
+I"#<p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png" alt="My Linux (Zorin OS) projected and controlled by my Android" /></p>
+
+<p>Linux distributions that come with GNOME desktop environment (Debian, Ubuntu, etc.) will have Vino as default VNC (Virtual Network Computing) server. So we will use it <em>Before continuing, it is best if you read it at least once.</em></p>
+
+<ol>
+  <li>
+    <p>Open GNOME Settings.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click “Sharing”.</p>
+  </li>
+  <li>
+    <p>Turn the toggle ON.</p>
+  </li>
+  <li>
+    <p>Click “Screen Sharing”.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Adjust “Screen Sharing” settings according to your preference.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png" alt="" /></p>
+  </li>
+  <li>
+    <p>To avoid problems caused by the incompatibility of the encryption used by Vino, we need to disable the encryption with the following command:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings set org.gnome.Vino require-encryption false
+</code></pre></div>    </div>
+
+    <p>After doing this, the connection to the Vino server becomes unencrypted making it insecure. It is not recommended to use it when on a public network.</p>
+
+    <p>Now we have finished the setup on the Vino server. Next, we need to install VNC viewer on the Android device. So far there are two applications that I recommend, that is:</p>
+
+    <ul>
+      <li><a href="https://play.google.com/store/apps/details?id=android.androidVNC">VNC Viewer for Android</a> by androidVNC team + antlersoft</li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android">VNC Viewer - Remote Desktop</a> by RealVNC Limited</li>
+    </ul>
+
+    <p>The first one has a touch control feature so we don’t need to control the mouse. The app is outdated but the features can be used well. The second is a more modern application but only has mouse controls. The touch control feature is only available for iOS. If you know of other good apps, let us know in the comments column below :)</p>
+  </li>
+  <li>
+    <p>After downloading VNC viewer. We will be asked to enter our computer’s IP address. To find out, we can run the following command in the terminal:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostname -I
+</code></pre></div>    </div>
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png" alt="" /></p>
+
+    <p>Use the first IP address (192.168.1. *). If asked, use port 5900.</p>
+  </li>
+  <li>
+    <p>Run the VNC viewer application that has been installed, adjust it to the VNC server configuration.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click “Connect”.</p>
+  </li>
+</ol>
+
+<p><br />
+Now, your Linux desktop can be controlled from Android. You can also use stylus to write or draw on the touch screen of your Android. Enjoy :)</p>
+:ET

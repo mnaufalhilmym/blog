@@ -1,0 +1,44 @@
+I"P<p>The following commands will create swap file on /swap/swapfile with size 2048MiB and blocksize (bs) 1MiB.</p>
+
+<ol>
+  <li>Create a subvolume. This subvolume must be non-compressed and non-snapshotted. We will configure it in the next steps.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo btrfs subvolume create /swap
+</code></pre></div>    </div>
+  </li>
+  <li>Create a zero length file
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo truncate -s 0 /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Set No_COW attribute
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chattr +C /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Disable compression in file
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo btrfs property set /swap/swapfile compression none
+</code></pre></div>    </div>
+  </li>
+  <li>Create a swap file
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dd if=/dev/zero of=/swap/swapfile bs=1M count=2048 status=progress
+</code></pre></div>    </div>
+  </li>
+  <li>Set permission to avoid vulnerability
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod 600 /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Format to swap
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkswap /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Activate the swap file
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo swapon /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Add swap entry in the fstab configuration. Use vim, nano, etc to edit file in /etc/fstab. Add below configuration in the end of the file.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/swap/swapfile    none    swap    defaults    0 0
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><br />
+Yapp.. It’s done :)</p>
+:ET

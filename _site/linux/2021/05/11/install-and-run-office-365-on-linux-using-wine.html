@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Install and Run Office 365 on Linux Using WINE" />
+<meta name="author" content="Muhammad Naufal Hilmy Makarim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I am Hilmy, and this is my blog 😬" />
+<meta property="og:description" content="I am Hilmy, and this is my blog 😬" />
+<link rel="canonical" href="http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html" />
+<meta property="og:url" content="http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html" />
+<meta property="og:site_name" content="Hilmy’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-11T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Install and Run Office 365 on Linux Using WINE" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html"},"url":"http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html","author":{"@type":"Person","name":"Muhammad Naufal Hilmy Makarim"},"headline":"Install and Run Office 365 on Linux Using WINE","dateModified":"2021-05-11T00:00:00+07:00","datePublished":"2021-05-11T00:00:00+07:00","description":"I am Hilmy, and this is my blog 😬","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/./favicon.ico?" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/agate.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hilmy's Blog" /></head><body>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <title>Install and Run Office 365 on Linux Using WINE</title>
+  
+  <header class="post-header">
+    <div class="post-back">
+      <a class="black-link" href="http://localhost:4000">
+        ← Home
+      </a>
+    </div>
+
+    <h1 class="post-title p-name" itemprop="name headline">
+      Install and Run Office 365 on Linux Using WINE
+    </h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-05-11T00:00:00+07:00" itemprop="datePublished">May 11, 2021
+      </time>•
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">
+          <a class="inherit-color-link" href="http://localhost:4000/about.html">
+            Muhammad Naufal Hilmy Makarim
+          </a>
+          </span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/1.png" alt="My Linux desktop (Zorin OS) running Office 365 through WINE"></p>
+
+<p><em>Before continuing, it is best if you read it at least once.</em></p>
+
+<ol>
+  <li>
+    <p>Download WINE. <a href="https://winehq.org/" target="_blank" rel="noopener noreferrer">Click this</a>.</p>
+  </li>
+  <li>
+    <p>Since I am using Zorin OS and it is an Ubuntu derivative, I use Ubuntu installation method.</p>
+
+    <p>If you are using Debian 10, Ubuntu 18.04, or derivatives, you need to download FAudio, which is WINE dependency, because it is not available in distro’s repository. <a href="https://forum.winehq.org/viewtopic.php?f=8&amp;t=32192" target="_blank" rel="noopener noreferrer">Download here</a>.</p>
+
+    <p>FAudio is available in the repository of Ubuntu 19.04 and later.</p>
+  </li>
+  <li>
+    <p>Install WINE and FAudio (if needed).</p>
+  </li>
+  <li>
+    <p>Create a WINEPREFIX folder with a 32-bit architecture only to isolate Office 365 from other Windows applications. This is necessary to prevent Office 365 failed to run in the future due to a conflict with any other Windows application dependency.To create it, run the following command on terminal:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>WINEPREFIX=$YOUR_PREFERRED_INSTALLATION_PATH WINEARCH=win32 winecfg
+</code></pre></div>    </div>
+
+    <p>Example:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>WINEPREFIX=~/.wine/office365 WINEARCH=win32 winecfg
+</code></pre></div>    </div>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/2.png" alt=""></p>
+  </li>
+  <li>
+    <p>On the “Wine configuration” dialog, select Windows 7 as “Windows Version”. Do not use other Windows version!</p>
+  </li>
+  <li>
+    <p><a href="https://wiki.winehq.org/Winetricks" target="_blank" rel="noopener noreferrer">Install winetricks</a>. If you are using a Debian or Ubuntu derivative, you can install it by running the following command on terminal:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo apt install winetricks
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install Office 365 dependencies by running the following command on terminal:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>WINEPREFIX=$YOUR_PREFERRED_INSTALLATION_PATH WINEARCH=win32 winetricks msxml6 riched20 allfonts
+</code></pre></div>    </div>
+
+    <p>Example:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>WINEPREFIX=~/.wine/office365 WINEARCH=win32 winetricks msxml6 riched20 allfonts
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Download Office 365 installation from <a href="https://office.com" target="_blank" rel="noopener noreferrer">office.com</a>. If you are using Linux, you will need to change your browser’s user agent. If you are using chrome browser, you can change it by following these method:</p>
+
+    <ul>
+      <li>Open “Developer tools” or “Inspect element”.</li>
+      <li>
+        <p>Open “Network conditions”.</p>
+
+        <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/3.png" alt=""></p>
+      </li>
+      <li>
+        <p>Uncheck “Select automatically” then select “Chrome - Windows”. Then reload the webpage.</p>
+
+        <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/4.png" alt=""></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>You will see “Install Office”. Click it then click “Other installation”.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/5.png" alt=""></p>
+  </li>
+  <li>
+    <p>Click “View applications &amp; devices”</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/6.png" alt=""></p>
+  </li>
+  <li>
+    <p>Select 32-bit version then click “Install Office”. The download process will start immediately.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/7.png" alt=""></p>
+  </li>
+  <li>
+    <p>To install Office 365, run the following command on terminal:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>WINEPREFIX=$YOUR_PREFERRED_INSTALLATION_PATH WINEARCH=win32 wine $YOUR_OFFICE365_DIRECTORY
+</code></pre></div>    </div>
+
+    <p>example:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>WINEPREFIX=~/.wine/office365 WINEARCH=win32 wine ~/Download/OfficeSetup.exe
+</code></pre></div>    </div>
+
+    <p>Please be patient as the process will take a very long time. You can view the percentage by clicking the icon in the Wine System Tray window.</p>
+  </li>
+</ol>
+
+<p><br>
+After the installation process is complete, you can run Office 365 like any other native Linux application. There may still be some functionality that is not working, but the basic functionality is still usable. Enjoy :)</p>
+
+  </div>
+
+  <a class="u-url" href="/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html" hidden></a>
+</article>
+
+        </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <ul class="contact-list">
+            <li class="p-name"><a class="black-link" href="http://localhost:4000/about.html">
+                  Muhammad Naufal Hilmy Makarim 
+                </a></li>
+<li>
+              <a class="u-email black-link" href="mailto:naufal@hilmy.dev">naufal[at]hilmy[dot]dev</a>
+</li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </footer></body>
+</html>

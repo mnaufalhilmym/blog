@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Create Swap File on Btrfs File System" />
+<meta name="author" content="Muhammad Naufal Hilmy Makarim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The following commands will create swap file on /swap/swapfile with size 2048MiB and blocksize (bs) 1MiB." />
+<meta property="og:description" content="The following commands will create swap file on /swap/swapfile with size 2048MiB and blocksize (bs) 1MiB." />
+<link rel="canonical" href="http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html" />
+<meta property="og:url" content="http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html" />
+<meta property="og:site_name" content="Hilmy’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-16T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Create Swap File on Btrfs File System" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html"},"url":"http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html","author":{"@type":"Person","name":"Muhammad Naufal Hilmy Makarim"},"headline":"Create Swap File on Btrfs File System","dateModified":"2021-06-16T00:00:00+07:00","datePublished":"2021-06-16T00:00:00+07:00","description":"The following commands will create swap file on /swap/swapfile with size 2048MiB and blocksize (bs) 1MiB.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="/./favicon.ico?" />
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/agate.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hilmy's Blog" /></head><body>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <title>Create Swap File on Btrfs File System</title>
+  
+  <header class="post-header">
+    <div class="post-back">
+      <a class="black-link" href="http://localhost:4000">
+        ← Home
+      </a>
+    </div>
+
+    <h1 class="post-title p-name" itemprop="name headline">
+      Create Swap File on Btrfs File System
+    </h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-06-16T00:00:00+07:00" itemprop="datePublished">Jun 16, 2021
+      </time>•
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">
+          <a class="inherit-color-link" href="http://localhost:4000/about.html">
+            Muhammad Naufal Hilmy Makarim
+          </a>
+          </span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>The following commands will create swap file on /swap/swapfile with size 2048MiB and blocksize (bs) 1MiB.</p>
+
+<ol>
+  <li>Create a subvolume. This subvolume must be non-compressed and non-snapshotted. We will configure it in the next steps.
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo btrfs subvolume create /swap
+</code></pre></div>    </div>
+  </li>
+  <li>Create a zero length file
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo truncate -s 0 /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Set No_COW attribute
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo chattr +C /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Disable compression in file
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo btrfs property set /swap/swapfile compression none
+</code></pre></div>    </div>
+  </li>
+  <li>Create a swap file
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo dd if=/dev/zero of=/swap/swapfile bs=1M count=2048 status=progress
+</code></pre></div>    </div>
+  </li>
+  <li>Set permission to avoid vulnerability
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo chmod 600 /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Format to swap
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo mkswap /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Activate the swap file
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>sudo swapon /swap/swapfile
+</code></pre></div>    </div>
+  </li>
+  <li>Add swap entry in the fstab configuration. Use vim, nano, etc to edit file in /etc/fstab. Add below configuration in the end of the file.
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>/swap/swapfile    none    swap    defaults    0 0
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><br>
+Yapp.. It’s done :)</p>
+
+  </div>
+
+  <a class="u-url" href="/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html" hidden></a>
+</article>
+
+        </div>
+    </main><footer class="site-footer h-card">
+    <data class="u-url" href="/"></data>
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <ul class="contact-list">
+            <li class="p-name"><a class="black-link" href="http://localhost:4000/about.html">
+                  Muhammad Naufal Hilmy Makarim 
+                </a></li>
+<li>
+              <a class="u-email black-link" href="mailto:naufal@hilmy.dev">naufal[at]hilmy[dot]dev</a>
+</li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </footer></body>
+</html>

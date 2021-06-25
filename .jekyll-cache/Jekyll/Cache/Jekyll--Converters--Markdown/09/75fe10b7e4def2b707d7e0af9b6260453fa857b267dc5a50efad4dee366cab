@@ -1,0 +1,30 @@
+I"z<p>This method should work on all desktop operating system such as Windows and Linux distributions (Debian, Ubuntu, Arch, Manjaro, and others).</p>
+
+<ol>
+  <li>
+    <p>Click option icon to the right of the profile icon, click “More tools”, then click “Developer tools”.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/1.png" alt="" /></p>
+
+    <p>You can also open it by clicking “Inspect” on the right mouse click dialog.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/2.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Click “Network conditions” as shown below.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/3.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Uncheck “Select automatically”, then choose “Chrome - Windows” as user agent.</p>
+
+    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/4.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Reload the webpage.</p>
+  </li>
+</ol>
+
+<p><br />
+Done :)</p>
+:ET
