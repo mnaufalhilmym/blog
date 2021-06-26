@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-25T16:20:08+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hilmy’s Blog</title><subtitle>I am Hilmy, and this is my blog 😬
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-26T09:13:24+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hilmy’s Blog</title><subtitle>I am Hilmy, and this is my blog 😬
 </subtitle><author><name>Muhammad Naufal Hilmy Makarim</name></author><entry><title type="html">Create Swap File on Btrfs File System</title><link href="http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html" rel="alternate" type="text/html" title="Create Swap File on Btrfs File System" /><published>2021-06-16T00:00:00+07:00</published><updated>2021-06-16T00:00:00+07:00</updated><id>http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system</id><content type="html" xml:base="http://localhost:4000/linux/2021/06/16/create-swap-file-on-btrfs-file-system.html">&lt;p&gt;The following commands will create swap file on /swap/swapfile with size 2048MiB and blocksize (bs) 1MiB.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -47,11 +47,11 @@ Yapp.. It’s done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Mak
   &lt;li&gt;
     &lt;p&gt;Make sure your Linux desktop has PRIME Profile NVIDIA On-Demand.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;You can also check it by running the command as shown below.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;In short, you can run certain applications using a dedicated NVIDIA GPU by running the following command.
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia $YOUR_APP
@@ -65,7 +65,7 @@ Yapp.. It’s done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Mak
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep vendor
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;If NVIDIA GPU is displayed, then the configuration is correct and the application can be run using dedicated NVIDIA GPU.&lt;/p&gt;
   &lt;/li&gt;
@@ -79,21 +79,21 @@ Enjoy :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></
   &lt;li&gt;
     &lt;p&gt;Click option icon to the right of the profile icon, click “More tools”, then click “Developer tools”.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;You can also open it by clicking “Inspect” on the right mouse click dialog.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Click “Network conditions” as shown below.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Uncheck “Select automatically”, then choose “Chrome - Windows” as user agent.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-change-user-agent-in-chrome-browser/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Reload the webpage.&lt;/p&gt;
@@ -101,7 +101,7 @@ Enjoy :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;br /&gt;
-Done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="Linux" /><summary type="html">This method should work on all desktop operating system such as Windows and Linux distributions (Debian, Ubuntu, Arch, Manjaro, and others).</summary></entry><entry><title type="html">Install and Run Office 365 on Linux Using WINE</title><link href="http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html" rel="alternate" type="text/html" title="Install and Run Office 365 on Linux Using WINE" /><published>2021-05-11T00:00:00+07:00</published><updated>2021-05-11T00:00:00+07:00</updated><id>http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine</id><content type="html" xml:base="http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/1.png&quot; alt=&quot;My Linux desktop (Zorin OS) running Office 365 through WINE&quot; /&gt;&lt;/p&gt;
+Done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="Linux" /><summary type="html">This method should work on all desktop operating system such as Windows and Linux distributions (Debian, Ubuntu, Arch, Manjaro, and others).</summary></entry><entry><title type="html">Install and Run Office 365 on Linux Using WINE</title><link href="http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html" rel="alternate" type="text/html" title="Install and Run Office 365 on Linux Using WINE" /><published>2021-05-11T00:00:00+07:00</published><updated>2021-05-11T00:00:00+07:00</updated><id>http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine</id><content type="html" xml:base="http://localhost:4000/linux/2021/05/11/install-and-run-office-365-on-linux-using-wine.html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/1.png&quot; alt=&quot;My Linux desktop (Zorin OS) running Office 365 through WINE&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Before continuing, it is best if you read it at least once.&lt;/em&gt;&lt;/p&gt;
 
@@ -130,7 +130,7 @@ Done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></a
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WINEPREFIX=~/.wine/office365 WINEARCH=win32 winecfg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;On the “Wine configuration” dialog, select Windows 7 as “Windows Version”. Do not use other Windows version!&lt;/p&gt;
@@ -160,29 +160,29 @@ Done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></a
       &lt;li&gt;
         &lt;p&gt;Open “Network conditions”.&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;Uncheck “Select automatically” then select “Chrome - Windows”. Then reload the webpage.&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;You will see “Install Office”. Click it then click “Other installation”.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Click “View applications &amp;amp; devices”&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Select 32-bit version then click “Install Office”. The download process will start immediately.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-install-and-run-office-365-on-linux-using-wine/7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;To install Office 365, run the following command on terminal:&lt;/p&gt;
@@ -200,7 +200,7 @@ Done :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></a
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;br /&gt;
-After the installation process is complete, you can run Office 365 like any other native Linux application. There may still be some functionality that is not working, but the basic functionality is still usable. Enjoy :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">Project and Control Linux Desktop from Android through VNC Using Vino</title><link href="http://localhost:4000/linux/2021/05/11/project-and-control-linux-desktop-from-android-through-vnc-using-vino.html" rel="alternate" type="text/html" title="Project and Control Linux Desktop from Android through VNC Using Vino" /><published>2021-05-11T00:00:00+07:00</published><updated>2021-05-11T00:00:00+07:00</updated><id>http://localhost:4000/linux/2021/05/11/project-and-control-linux-desktop-from-android-through-vnc-using-vino</id><content type="html" xml:base="http://localhost:4000/linux/2021/05/11/project-and-control-linux-desktop-from-android-through-vnc-using-vino.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png&quot; alt=&quot;My Linux (Zorin OS) projected and controlled by my Android&quot; /&gt;&lt;/p&gt;
+After the installation process is complete, you can run Office 365 like any other native Linux application. There may still be some functionality that is not working, but the basic functionality is still usable. Enjoy :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">Project and Control Linux Desktop from Android through VNC Using Vino</title><link href="http://localhost:4000/linux/2021/05/11/project-and-control-linux-desktop-from-android-through-vnc-using-vino.html" rel="alternate" type="text/html" title="Project and Control Linux Desktop from Android through VNC Using Vino" /><published>2021-05-11T00:00:00+07:00</published><updated>2021-05-11T00:00:00+07:00</updated><id>http://localhost:4000/linux/2021/05/11/project-and-control-linux-desktop-from-android-through-vnc-using-vino</id><content type="html" xml:base="http://localhost:4000/linux/2021/05/11/project-and-control-linux-desktop-from-android-through-vnc-using-vino.html">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png&quot; alt=&quot;My Linux (Zorin OS) projected and controlled by my Android&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Linux distributions that come with GNOME desktop environment (Debian, Ubuntu, etc.) will have Vino as default VNC (Virtual Network Computing) server. So we will use it &lt;em&gt;Before continuing, it is best if you read it at least once.&lt;/em&gt;&lt;/p&gt;
 
@@ -208,7 +208,7 @@ After the installation process is complete, you can run Office 365 like any othe
   &lt;li&gt;
     &lt;p&gt;Open GNOME Settings.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Click “Sharing”.&lt;/p&gt;
@@ -219,12 +219,12 @@ After the installation process is complete, you can run Office 365 like any othe
   &lt;li&gt;
     &lt;p&gt;Click “Screen Sharing”.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Adjust “Screen Sharing” settings according to your preference.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;To avoid problems caused by the incompatibility of the encryption used by Vino, we need to disable the encryption with the following command:&lt;/p&gt;
@@ -248,14 +248,14 @@ After the installation process is complete, you can run Office 365 like any othe
 
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hostname -I
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;Use the first IP address (192.168.1. *). If asked, use port 5900.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Run the VNC viewer application that has been installed, adjust it to the VNC server configuration.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Click “Connect”.&lt;/p&gt;
@@ -265,5 +265,5 @@ After the installation process is complete, you can run Office 365 like any othe
 &lt;p&gt;&lt;br /&gt;
 Now, your Linux desktop can be controlled from Android. You can also use stylus to write or draw on the touch screen of your Android. Enjoy :)&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">Linux</title><link href="http://localhost:4000/none/2014/11/24/linux.html" rel="alternate" type="text/html" title="Linux" /><published>2014-11-24T00:00:00+07:00</published><updated>2014-11-24T00:00:00+07:00</updated><id>http://localhost:4000/none/2014/11/24/linux</id><content type="html" xml:base="http://localhost:4000/none/2014/11/24/linux.html">&lt;p&gt;Hmmm… Linux looks great.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/_posts/2014-11-24-linux/1397279_1553243851577684_5075440000763899240_o.jpg&quot; alt=&quot;My first Linux OS installed on my laptop :)&quot; /&gt;&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="None" /><summary type="html">Hmmm… Linux looks great.</summary></entry><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/none/1999/11/21/hello-world.html" rel="alternate" type="text/html" title="Hello, World!" /><published>1999-11-21T00:00:00+07:00</published><updated>1999-11-21T00:00:00+07:00</updated><id>http://localhost:4000/none/1999/11/21/hello-world</id><content type="html" xml:base="http://localhost:4000/none/1999/11/21/hello-world.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print(Hello, World!)
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2014-11-24-linux/1397279_1553243851577684_5075440000763899240_o.jpg&quot; alt=&quot;My first Linux OS installed on my laptop :)&quot; /&gt;&lt;/p&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="None" /><summary type="html">Hmmm… Linux looks great.</summary></entry><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/none/1999/11/21/hello-world.html" rel="alternate" type="text/html" title="Hello, World!" /><published>1999-11-21T00:00:00+07:00</published><updated>1999-11-21T00:00:00+07:00</updated><id>http://localhost:4000/none/1999/11/21/hello-world</id><content type="html" xml:base="http://localhost:4000/none/1999/11/21/hello-world.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print(Hello, World!)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Muhammad Naufal Hilmy Makarim</name></author><category term="None" /><summary type="html">print(Hello, World!)</summary></entry></feed>

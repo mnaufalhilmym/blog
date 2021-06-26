@@ -1,4 +1,4 @@
-I"#<p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png" alt="My Linux (Zorin OS) projected and controlled by my Android" /></p>
+I"�<p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/1.png" alt="My Linux (Zorin OS) projected and controlled by my Android" /></p>
 
 <p>Linux distributions that come with GNOME desktop environment (Debian, Ubuntu, etc.) will have Vino as default VNC (Virtual Network Computing) server. So we will use it <em>Before continuing, it is best if you read it at least once.</em></p>
 
@@ -6,7 +6,7 @@
   <li>
     <p>Open GNOME Settings.</p>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/2.png" alt="" /></p>
   </li>
   <li>
     <p>Click “Sharing”.</p>
@@ -17,12 +17,12 @@
   <li>
     <p>Click “Screen Sharing”.</p>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/3.png" alt="" /></p>
   </li>
   <li>
     <p>Adjust “Screen Sharing” settings according to your preference.</p>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/4.png" alt="" /></p>
   </li>
   <li>
     <p>To avoid problems caused by the incompatibility of the encryption used by Vino, we need to disable the encryption with the following command:</p>
@@ -46,14 +46,14 @@
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostname -I
 </code></pre></div>    </div>
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/5.png" alt="" /></p>
 
     <p>Use the first IP address (192.168.1. *). If asked, use port 5900.</p>
   </li>
   <li>
     <p>Run the VNC viewer application that has been installed, adjust it to the VNC server configuration.</p>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-11-project-and-control-linux-desktop-from-android-through-vnc-using-vino/6.png" alt="" /></p>
   </li>
   <li>
     <p>Click “Connect”.</p>

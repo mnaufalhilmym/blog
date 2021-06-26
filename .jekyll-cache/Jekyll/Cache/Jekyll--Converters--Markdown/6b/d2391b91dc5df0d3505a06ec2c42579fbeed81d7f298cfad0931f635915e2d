@@ -1,14 +1,14 @@
-I"a<p>This method should work on all Linux distributions, such as Debian, Ubuntu, Arch, Manjaro, among others.</p>
+I"Í<p>This method should work on all Linux distributions, such as Debian, Ubuntu, Arch, Manjaro, among others.</p>
 
 <ol>
   <li>
     <p>Make sure your Linux desktop has PRIME Profile NVIDIA On-Demand.</p>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/1.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/1.png" alt="" /></p>
 
     <p>You can also check it by running the command as shown below.</p>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/2.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/2.png" alt="" /></p>
   </li>
   <li>In short, you can run certain applications using a dedicated NVIDIA GPU by running the following command.
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia $YOUR_APP
@@ -22,7 +22,7 @@
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep vendor
 </code></pre></div>    </div>
 
-    <p><img src="http://localhost:4000/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/3.png" alt="" /></p>
+    <p><img src="https://raw.githubusercontent.com/mnaufalhilmym/blog/main/assets/img/_posts/2021-05-12-run-specific-linux-application-using-dedicated-nvidia-gpu-card/3.png" alt="" /></p>
 
     <p>If NVIDIA GPU is displayed, then the configuration is correct and the application can be run using dedicated NVIDIA GPU.</p>
   </li>
