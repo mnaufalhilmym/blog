@@ -1,0 +1,7 @@
+I"<ol>
+  <li>Some packages in <code class="highlighter-rouge">devel_basis</code> pattern like <code class="highlighter-rouge">gcc</code>, <code class="highlighter-rouge">make</code>, etc. are needed so we should install it first.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo zypper in -t pattern devel_basis
+</code></pre></div>    </div>
+  </li>
+</ol>
+:ET
