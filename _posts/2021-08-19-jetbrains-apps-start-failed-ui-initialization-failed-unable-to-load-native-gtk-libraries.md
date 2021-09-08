@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JetBrains Apps Start Failed: UI Initialization Failed and Unable to Load Native GTK Libraries"
-categories: Linux, JetBrains
+categories: Linux JetBrains
 author: "Muhammad Naufal Hilmy Makarim"
 ---
 
